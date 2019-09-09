@@ -1,0 +1,23 @@
+[core]
+	excludesfile = /Users/sean.mcintyre/.gitignore
+	editor = /usr/local/bin/vim
+[user]
+	name = boxysean
+	email = sean.mcintyre@warbyparker.com
+[help]
+	autocorrect = 1
+
+[alias]
+  co = checkout
+  ci = commit
+  br = !git --no-pager branch
+  st = status
+  sw = switch
+  re = restore
+  bname = !git symbolic-ref HEAD
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  shove = !git add . && git commit -m update && git push
+  fpush = !git push --force-with-lease
+  since = !git log $(git merge-base --fork-point master)..HEAD
+  sha = rev-parse --short HEAD
+  hash = rev-parse HEAD
