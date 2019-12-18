@@ -3,3 +3,10 @@
 - Install fasd and z-autoenv plugins with bash-it
 - Install vundle: https://github.com/VundleVim/Vundle.vim#quick-start
 - Fix vim: `git config --global core.editor /usr/bin/vim`
+
+## ipython
+
+From https://stackoverflow.com/a/43020072
+
+- Run `ipython profile create`
+- Copy `ipython_config.py` to `~/.ipython/profile_default/ipython_config.py`
