@@ -1,9 +1,9 @@
 [core]
-	excludesfile = /Users/sean.mcintyre/.gitignore
-	editor = /usr/local/bin/vim
+	excludesfile = ~/.gitignore
+	editor = vim
 [user]
 	name = boxysean
-	email = sean.mcintyre@warbyparker.com
+	email = boxysean@gmail.com
 [help]
 	autocorrect = 1
 
@@ -21,3 +21,4 @@
   since = !git log $(git merge-base --fork-point master)..HEAD
   sha = rev-parse --short HEAD
   hash = rev-parse HEAD
+  pom = !git stash && git checkout master && git pull origin master && git stash pop
